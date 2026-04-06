@@ -30,49 +30,37 @@ export default function HomePage() {
     position: "sticky",
     top: 0,
     zIndex: 50,
-    background: "rgba(255,255,255,0.92)",
-    backdropFilter: "blur(10px)",
+    background: "rgba(255,255,255,0.95)",
     borderBottom: "1px solid #e5e7eb",
   }}
 >
   <div
     style={{
-  maxWidth: "1200px",
-  margin: "0 auto",
-  padding: "56px 20px 40px",
-  display: "grid",
-  gridTemplateColumns: "1.1fr 0.9fr",
-  gap: "40px",
-  alignItems: "center",
-}}
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "12px 20px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+    }}
   >
-    <div
-     style={{
-  background: "rgba(255,255,255,0.72)",
-  border: "1px solid #e5e7eb",
-  borderRadius: "28px",
-  boxShadow: "0 18px 40px rgba(15,23,42,0.08)",
-  padding: "28px",
-}}
-    >
-     <Image
-  src="/logo.png"
-  alt="Techpark Engineering"
-  width={180}
-  height={40}
-  priority
-  style={{ height: "40px", width: "auto" }}
-/>
-    </div>
+    {/* LOGO */}
+    <Image
+      src="/logo.png"
+      alt="Techpark Engineering"
+      width={180}
+      height={40}
+      priority
+      style={{ height: "40px", width: "auto" }}
+    />
 
+    {/* NAV */}
     <nav
       style={{
         display: "flex",
-        alignItems: "center",
         gap: "24px",
         fontSize: "15px",
         color: "#334155",
-        fontWeight: 500,
       }}
     >
       <a href="#about">За нас</a>
@@ -81,17 +69,16 @@ export default function HomePage() {
       <a href="#contact">Контакти</a>
     </nav>
 
+    {/* BUTTON */}
     <a
       href="#contact"
       style={{
         background: "#ef2b2d",
-        color: "#ffffff",
-        padding: "10px 16px",
-        borderRadius: "12px",
-        fontWeight: 700,
+        color: "#fff",
+        padding: "10px 18px",
+        borderRadius: "10px",
+        fontWeight: 600,
         textDecoration: "none",
-        boxShadow: "0 10px 24px rgba(239,43,45,0.18)",
-        whiteSpace: "nowrap",
       }}
     >
       Запитване
