@@ -38,7 +38,7 @@ export default function HomePage() {
   style={{
     maxWidth: "1200px",
     margin: "0 auto",
-    padding: "10px 20px",
+    padding: "8px 20px",
     display: "grid",
     gridTemplateColumns: "240px 1fr auto",
     alignItems: "center",
@@ -57,13 +57,16 @@ export default function HomePage() {
 
     {/* NAV */}
     <nav
-      style={{
-        display: "flex",
-        gap: "24px",
-        fontSize: "15px",
-        color: "#334155",
-      }}
-    >
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "32px",
+    fontSize: "15px",
+    color: "#334155",
+    fontWeight: 500,
+  }}
+>
       <a href="#about">За нас</a>
       <a href="#services">Услуги</a>
       <a href="#products">Продукти</a>
