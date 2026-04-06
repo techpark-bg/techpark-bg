@@ -89,9 +89,7 @@ export default function HomePage() {
       <section className="hero">
        <div
   className="container hero-grid"
-  style={{
-    paddingTop: "40px",
-  }}
+  
 >
           <div>
             <p className="eyebrow">TECHPARK ENGINEERING</p>
