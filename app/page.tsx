@@ -25,36 +25,78 @@ const products = [
 export default function HomePage() {
   return (
     <main className="site-shell">
-      <header>
-        <div className="mx-auto max-w-7xl px-6 py-1.5 flex items-center justify-between backdrop-blur-md bg-white border-b border-white/10 rounded-b-xl">
+      <header
+  style={{
+    position: "sticky",
+    top: 0,
+    zIndex: 50,
+    background: "rgba(255,255,255,0.88)",
+    backdropFilter: "blur(12px)",
+    borderBottom: "1px solid #e5e7eb",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "12px 20px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      gap: "24px",
+    }}
+  >
+    <div
+      style={{
+        background: "#ffffff",
+        border: "1px solid #e5e7eb",
+        borderRadius: "14px",
+        padding: "8px 12px",
+        boxShadow: "0 8px 24px rgba(15,23,42,0.08)",
+      }}
+    >
+      <Image
+        src="/logo.png"
+        alt="Techpark Engineering"
+        width={260}
+        height={56}
+        priority
+        style={{ width: "260px", height: "auto", display: "block" }}
+      />
+    </div>
 
-  {/* LOGO */}
-  <div className="bg-white/10 backdrop-blur-lg px-3 py-1.5 rounded-xl border border-white/10 shadow-md">
-    <Image 
-      src="/logo.png" 
-      alt="Techpark Engineering" 
-      width={160}
-      height={40}
-      className="h-9 md:h-12 w-auto object-contain"
-      priority
-    />
+    <nav
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "28px",
+        fontSize: "15px",
+        color: "#334155",
+        fontWeight: 500,
+      }}
+    >
+      <a href="#about">За нас</a>
+      <a href="#services">Услуги</a>
+      <a href="#products">Продукти</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+
+    <a
+      href="#contact"
+      style={{
+        background: "#dc2626",
+        color: "#ffffff",
+        padding: "10px 16px",
+        borderRadius: "12px",
+        fontWeight: 700,
+        textDecoration: "none",
+        boxShadow: "0 10px 24px rgba(220,38,38,0.22)",
+      }}
+    >
+      Запитване
+    </a>
   </div>
-
-  {/* NAV */}
-  <nav className="hidden md:flex items-center gap-8 text-sm text-slate-700">
-    <a href="#about" className="hover:text-white transition">За нас</a>
-    <a href="#services" className="hover:text-white transition">Услуги</a>
-    <a href="#products" className="hover:text-white transition">Продукти</a>
-    <a href="#contact" className="hover:text-white transition">Контакти</a>
-  </nav>
-
-  {/* CTA */}
-  <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-xl transition shadow-lg">
-    Запитване
-  </a>
-
-</div>
-      </header>
+</header>
 
       <section className="hero">
         <div className="container hero-grid">
