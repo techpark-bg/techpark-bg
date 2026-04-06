@@ -26,7 +26,7 @@ export default function HomePage() {
   return (
     <main className="site-shell">
       <header>
-        <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between backdrop-blur-md bg-[#060B17]/70 border-b border-white/10 rounded-b-xl">
+        <div className="mx-auto max-w-7xl px-6 py-1.5 flex items-center justify-between backdrop-blur-md bg-white border-b border-white/10 rounded-b-xl">
 
   {/* LOGO */}
   <div className="bg-white/10 backdrop-blur-lg px-3 py-1.5 rounded-xl border border-white/10 shadow-md">
@@ -35,13 +35,13 @@ export default function HomePage() {
       alt="Techpark Engineering" 
       width={160}
       height={40}
-      className="h-8 md:h-9 w-auto object-contain"
+      className="h-9 md:h-12 w-auto object-contain"
       priority
     />
   </div>
 
   {/* NAV */}
-  <nav className="hidden md:flex items-center gap-8 text-sm text-slate-300">
+  <nav className="hidden md:flex items-center gap-8 text-sm text-slate-700">
     <a href="#about" className="hover:text-white transition">За нас</a>
     <a href="#services" className="hover:text-white transition">Услуги</a>
     <a href="#products" className="hover:text-white transition">Продукти</a>
