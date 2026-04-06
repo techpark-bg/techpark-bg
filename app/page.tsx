@@ -67,10 +67,78 @@ export default function HomePage() {
     fontWeight: 500,
   }}
 >
-      <a href="#about">За нас</a>
-      <a href="#services">Услуги</a>
-      <a href="#products">Продукти</a>
-      <a href="#contact">Контакти</a>
+      <a
+  href="#about"
+  style={{
+    color: "#334155",
+    textDecoration: "none",
+    transition: "all 0.2s ease",
+  }}
+  onMouseEnter={(e) => {
+  e.currentTarget.style.color = "#000";
+  e.currentTarget.style.transform = "translateY(-1px)";
+}}
+onMouseLeave={(e) => {
+  e.currentTarget.style.color = "#334155";
+  e.currentTarget.style.transform = "none";
+}}
+>
+  За нас
+</a>
+      <a
+  href="#services"
+  style={{
+    color: "#334155",
+    textDecoration: "none",
+    transition: "all 0.2s ease",
+  }}
+  onMouseEnter={(e) => {
+  e.currentTarget.style.color = "#000";
+  e.currentTarget.style.transform = "translateY(-1px)";
+}}
+onMouseLeave={(e) => {
+  e.currentTarget.style.color = "#334155";
+  e.currentTarget.style.transform = "none";
+}}
+>
+  Услуги
+</a>
+      <a
+  href="#products"
+  style={{
+    color: "#334155",
+    textDecoration: "none",
+    transition: "all 0.2s ease",
+  }}
+  onMouseEnter={(e) => {
+  e.currentTarget.style.color = "#000";
+  e.currentTarget.style.transform = "translateY(-1px)";
+}}
+onMouseLeave={(e) => {
+  e.currentTarget.style.color = "#334155";
+  e.currentTarget.style.transform = "none";
+}}
+>
+  Продукти
+</a>
+      <a
+  href="#contacts"
+  style={{
+    color: "#334155",
+    textDecoration: "none",
+    transition: "all 0.2s ease",
+  }}
+  onMouseEnter={(e) => {
+  e.currentTarget.style.color = "#000";
+  e.currentTarget.style.transform = "translateY(-1px)";
+}}
+onMouseLeave={(e) => {
+  e.currentTarget.style.color = "#334155";
+  e.currentTarget.style.transform = "none";
+}}
+>
+  Контакти
+</a>
     </nav>
 
     {/* BUTTON */}
