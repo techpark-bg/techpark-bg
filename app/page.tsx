@@ -48,8 +48,8 @@ export default function HomePage() {
     <Image
       src="/logo.png"
       alt="Techpark Engineering"
-      width={180}
-      height={40}
+      width={220}
+      height={50}
       priority
       style={{ height: "40px", width: "auto" }}
     />
@@ -87,7 +87,12 @@ export default function HomePage() {
 </header>
 
       <section className="hero">
-        <div className="container hero-grid">
+       <div
+  className="container hero-grid"
+  style={{
+    paddingTop: "40px",
+  }}
+>
           <div>
             <p className="eyebrow">TECHPARK ENGINEERING</p>
             <h1>Модерен фирмен сайт с premium визия и готова основа за админ панел.</h1>
