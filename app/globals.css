@@ -101,13 +101,12 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
 }
 
-.eyebrow,
-.section-label {
-  color: #c8d3e3;
+.eyebrow {
+  font-size: 14px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 12px;
-  margin: 0 0 14px;
+  color: #94a3b8;
+  margin-bottom: 18px;
 }
 
 h1 {
