@@ -30,46 +30,46 @@ export default function HomePage() {
     position: "sticky",
     top: 0,
     zIndex: 50,
-    background: "rgba(255,255,255,0.88)",
-    backdropFilter: "blur(12px)",
+    background: "rgba(255,255,255,0.92)",
+    backdropFilter: "blur(10px)",
     borderBottom: "1px solid #e5e7eb",
   }}
 >
   <div
     style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "12px 20px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      gap: "24px",
-    }}
+  maxWidth: "1200px",
+  margin: "0 auto",
+  padding: "56px 20px 40px",
+  display: "grid",
+  gridTemplateColumns: "1.1fr 0.9fr",
+  gap: "40px",
+  alignItems: "center",
+}}
   >
     <div
-      style={{
-        background: "#ffffff",
-        border: "1px solid #e5e7eb",
-        borderRadius: "14px",
-        padding: "8px 12px",
-        boxShadow: "0 8px 24px rgba(15,23,42,0.08)",
-      }}
+     style={{
+  background: "rgba(255,255,255,0.72)",
+  border: "1px solid #e5e7eb",
+  borderRadius: "28px",
+  boxShadow: "0 18px 40px rgba(15,23,42,0.08)",
+  padding: "28px",
+}}
     >
-      <Image
-        src="/logo.png"
-        alt="Techpark Engineering"
-        width={260}
-        height={56}
-        priority
-        style={{ width: "260px", height: "auto", display: "block" }}
-      />
+     <Image
+  src="/logo.png"
+  alt="Techpark Engineering"
+  width={180}
+  height={40}
+  priority
+  style={{ height: "40px", width: "auto" }}
+/>
     </div>
 
     <nav
       style={{
         display: "flex",
         alignItems: "center",
-        gap: "28px",
+        gap: "24px",
         fontSize: "15px",
         color: "#334155",
         fontWeight: 500,
@@ -84,13 +84,14 @@ export default function HomePage() {
     <a
       href="#contact"
       style={{
-        background: "#dc2626",
+        background: "#ef2b2d",
         color: "#ffffff",
         padding: "10px 16px",
         borderRadius: "12px",
         fontWeight: 700,
         textDecoration: "none",
-        boxShadow: "0 10px 24px rgba(220,38,38,0.22)",
+        boxShadow: "0 10px 24px rgba(239,43,45,0.18)",
+        whiteSpace: "nowrap",
       }}
     >
       Запитване
