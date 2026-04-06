@@ -25,21 +25,35 @@ const products = [
 export default function HomePage() {
   return (
     <main className="site-shell">
-      <header className="header">
-        <div className="container nav-row">
-          <div className="logo-wrap">
-            <Image src="/logo.png" alt="Techpark Engineering" width={620} height={130} className="logo" priority />
-          </div>
+      <header>
+        <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between backdrop-blur-md bg-[#060B17]/70 border-b border-white/10 rounded-b-xl">
 
-          <nav className="nav">
-            <a href="#about">За нас</a>
-            <a href="#services">Услуги</a>
-            <a href="#products">Продукти</a>
-            <a href="#contact">Контакти</a>
-          </nav>
+  {/* LOGO */}
+  <div className="bg-white/10 backdrop-blur-lg px-3 py-1.5 rounded-xl border border-white/10 shadow-md">
+    <Image 
+      src="/logo.png" 
+      alt="Techpark Engineering" 
+      width={160}
+      height={40}
+      className="h-8 md:h-9 w-auto object-contain"
+      priority
+    />
+  </div>
 
-          <a href="#contact" className="cta-link">Запитване</a>
-        </div>
+  {/* NAV */}
+  <nav className="hidden md:flex items-center gap-8 text-sm text-slate-300">
+    <a href="#about" className="hover:text-white transition">За нас</a>
+    <a href="#services" className="hover:text-white transition">Услуги</a>
+    <a href="#products" className="hover:text-white transition">Продукти</a>
+    <a href="#contact" className="hover:text-white transition">Контакти</a>
+  </nav>
+
+  {/* CTA */}
+  <a href="#contact" className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-xl transition shadow-lg">
+    Запитване
+  </a>
+
+</div>
       </header>
 
       <section className="hero">
