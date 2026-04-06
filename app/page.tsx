@@ -35,24 +35,25 @@ export default function HomePage() {
   }}
 >
   <div
-    style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "12px 20px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-    }}
-  >
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "10px 20px",
+    display: "grid",
+    gridTemplateColumns: "240px 1fr auto",
+    alignItems: "center",
+    gap: "24px",
+  }}
+>
     {/* LOGO */}
     <Image
-      src="/logo.png"
-      alt="Techpark Engineering"
-      width={220}
-      height={50}
-      priority
-      style={{ height: "40px", width: "auto" }}
-    />
+  src="/logo.png"
+  alt="Techpark Engineering"
+  width={220}
+  height={48}
+  priority
+  style={{ height: "48px", width: "auto", display: "block" }}
+/>
 
     {/* NAV */}
     <nav
