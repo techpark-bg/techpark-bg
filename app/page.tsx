@@ -40,7 +40,7 @@ export default function HomePage() {
     margin: "0 auto",
     padding: "8px 20px",
     display: "grid",
-    gridTemplateColumns: "240px 1fr auto",
+    gridTemplateColumns: "1fr 1fr auto",
     alignItems: "center",
     gap: "24px",
   }}
@@ -49,10 +49,10 @@ export default function HomePage() {
     <Image
   src="/logo.png"
   alt="Techpark Engineering"
-  width={220}
-  height={48}
+  width={500}
+  height={120}
   priority
-  style={{ height: "48px", width: "auto", display: "block" }}
+  style={{ width: "100%", height: "auto" }}
 />
 
     {/* NAV */}
